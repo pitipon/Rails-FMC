@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+mock = [{name:'mo', text: 'Hello World'},
+{name:'Fabien', text: 'Hello Python'},
+{name:'Brain', text: 'Hello JS'},
+{name:'Forrest', text: 'Helle Rails'}]
+
+Story.create(mock)
