@@ -2,7 +2,7 @@
 class Api::V1::StoriesController < Api::V1::BaseController 
     before_action :set_story, only: [ :show, :update, :destroy ]
     def index 
-        @stories = Story.all 
+        @stories = Story.all.reverse 
         # render json: @stories
     end 
 
